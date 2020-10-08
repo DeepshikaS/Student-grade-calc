@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Grade Calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-sacle=0.1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <h2>Student Grade Calculator</h2>
+    <div class="main">
+      <div class="container">
+        <div class="screen">
+          <div class="marks">
+            <label>English</label> <input type="text" id="eng" /> <br />
+            <label>Maths</label> <input type="text" id="maths" /> <br />
+            <label>Science</label> <input type="text" id="sci" /> <br />
+            <label>Social</label> <input type="text" id="soc" /> <br />
+            <label>Language</label> <input type="text" id="lang" /> <br />
+            <br />
+            <button onclick="total()">Total</button>
+            <button onclick="Average()">Average</button>
+            <button onclick="grade()">Grade</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grades">
+      <div id="head1"><h1>Total</h1></div>
+      <div id="tot"></div>
+      <div id="head2"><h1>Average</h1></div>
+      <div id="avg"></div>
+      <div id="head3"><h1>Grades</h1></div>
+      <div id="grade"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
